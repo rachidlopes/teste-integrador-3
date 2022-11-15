@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20221115 01:25:30.284" rpa="false" schemaversion="2">
+<suite id="s1" name="Pi3 Testes" source="C:\Users\rachi\Documents\Rachid\Estudos\Projeto_Integrador_3\teste-integrador-3\pi3_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Verificar a existencia do menu superior na página.">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:25:32.516" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:25:32.515" endtime="20221115 01:25:43.908"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:25:43.909" endtime="20221115 01:25:44.251"/>
+</kw>
+<status status="PASS" starttime="20221115 01:25:32.514" endtime="20221115 01:25:44.252"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:25:44.336" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:25:44.335" endtime="20221115 01:25:54.213"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:25:54.214" endtime="20221115 01:25:54.396"/>
+</kw>
+<status status="PASS" starttime="20221115 01:25:44.333" endtime="20221115 01:25:54.397"/>
+</kw>
+<kw name="Verificar se carregou o menu superior" library="pi3_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:25:54.399" endtime="20221115 01:25:54.519"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>locator=//nav[contains(@class,'navbar navbar-expand-md navbar-dark navbar-custom fixed-top')]</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221115 01:25:55.034" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:25:54.519" endtime="20221115 01:25:55.034"/>
+</kw>
+<status status="PASS" starttime="20221115 01:25:54.398" endtime="20221115 01:25:55.034"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:25:55.974" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:25:55.079" endtime="20221115 01:25:55.974"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:25:55.975" endtime="20221115 01:26:01.299"/>
+</kw>
+<status status="PASS" starttime="20221115 01:25:55.078" endtime="20221115 01:26:01.299"/>
+</kw>
+<doc>Esse teste verfica o menu superior da home</doc>
+<tag>menus pagina</tag>
+<status status="PASS" starttime="20221115 01:25:32.511" endtime="20221115 01:26:01.299"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02 - Acessar a Home no menu.">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:26:01.306" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:26:01.305" endtime="20221115 01:26:10.503"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:26:10.504" endtime="20221115 01:26:10.768"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:01.304" endtime="20221115 01:26:10.768"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:26:10.812" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:26:10.811" endtime="20221115 01:26:18.698"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:26:18.699" endtime="20221115 01:26:18.890"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:10.810" endtime="20221115 01:26:18.891"/>
+</kw>
+<kw name="Clicar no botão home do menu" library="pi3_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[@class='nav-link page-scroll'][contains(.,'Home (current)')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:26:18.925" level="INFO">Clicking element '//a[@class='nav-link page-scroll'][contains(.,'Home (current)')]'.</msg>
+<status status="PASS" starttime="20221115 01:26:18.924" endtime="20221115 01:26:22.279"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:18.923" endtime="20221115 01:26:22.281"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:26:23.108" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:26:22.311" endtime="20221115 01:26:23.109"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:26:23.110" endtime="20221115 01:26:26.772"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:22.310" endtime="20221115 01:26:26.772"/>
+</kw>
+<doc>Esse teste verfica o acesso a Home do Menu</doc>
+<tag>acessar_home Botoes</tag>
+<status status="PASS" starttime="20221115 01:26:01.302" endtime="20221115 01:26:26.772"/>
+</test>
+<test id="s1-t3" name="Caso de Teste 03 - Acessar o Contato no menu.">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:26:26.779" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:26:26.778" endtime="20221115 01:26:34.631"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:26:34.634" endtime="20221115 01:26:35.202"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:26.777" endtime="20221115 01:26:35.202"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:26:35.216" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:26:35.215" endtime="20221115 01:26:42.218"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:26:42.219" endtime="20221115 01:26:42.357"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:35.212" endtime="20221115 01:26:42.359"/>
+</kw>
+<kw name="Clicar no botão Contato do menu" library="pi3_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${CONTATO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:26:42.365" level="INFO">Clicking element '//a[@href='/contato']'.</msg>
+<status status="PASS" starttime="20221115 01:26:42.363" endtime="20221115 01:26:45.174"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//li[@class='address'][contains(.,'Entre em contato e tire suas dúvidas')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:26:45.174" endtime="20221115 01:26:45.363"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:42.361" endtime="20221115 01:26:45.364"/>
+</kw>
+<kw name="Digitar o nome de contato &quot;Luis Inacio da Silva&quot; no campo de contato" library="pi3_resources" sourcename="Digitar o nome de contato &quot;${NomeContato}&quot; no campo de contato">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=nomeid2</arg>
+<arg>text=${NomeContato}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221115 01:26:45.372" level="INFO">Typing text 'Luis Inacio da Silva' into text field 'nomeid2'.</msg>
+<status status="PASS" starttime="20221115 01:26:45.371" endtime="20221115 01:26:45.938"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:45.370" endtime="20221115 01:26:45.939"/>
+</kw>
+<kw name="Digitar o número de telefone &quot;13 91313-1313&quot; no campo de Telefone" library="pi3_resources" sourcename="Digitar o número de telefone &quot;${Telefone}&quot; no campo de telefone">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=telefoneid2</arg>
+<arg>text=${Telefone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221115 01:26:45.948" level="INFO">Typing text '13 91313-1313' into text field 'telefoneid2'.</msg>
+<status status="PASS" starttime="20221115 01:26:45.946" endtime="20221115 01:26:46.448"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:45.945" endtime="20221115 01:26:46.449"/>
+</kw>
+<kw name="Digitar uma mensagem &quot;Gostaria de um orçamento para campanha eleitoral 2022&quot; no campo mensagem" library="pi3_resources" sourcename="Digitar uma mensagem ${Mensagem} no campo mensagem">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=mensagemid2</arg>
+<arg>text=${Mensagem}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221115 01:26:46.454" level="INFO">Typing text '"Gostaria de um orçamento para campanha eleitoral 2022"' into text field 'mensagemid2'.</msg>
+<status status="PASS" starttime="20221115 01:26:46.451" endtime="20221115 01:26:47.050"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>locator=//div[contains(@class,'col-lg-6')]</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221115 01:26:47.374" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-2.png"&gt;&lt;img src="selenium-element-screenshot-2.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:26:47.050" endtime="20221115 01:26:47.374"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:46.449" endtime="20221115 01:26:47.374"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:26:47.625" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:26:47.378" endtime="20221115 01:26:47.625"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:26:47.625" endtime="20221115 01:26:51.146"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:47.376" endtime="20221115 01:26:51.146"/>
+</kw>
+<doc>Esse teste verfica o acesso a Contato do Menu</doc>
+<tag>acessar_menu Botoes</tag>
+<status status="PASS" starttime="20221115 01:26:26.776" endtime="20221115 01:26:51.146"/>
+</test>
+<test id="s1-t4" name="Caso de Teste 04 - Acessar o Blog no menu.">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:26:51.158" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:26:51.157" endtime="20221115 01:26:58.562"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:26:58.562" endtime="20221115 01:26:58.815"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:51.155" endtime="20221115 01:26:58.815"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:26:58.820" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:26:58.820" endtime="20221115 01:27:05.813"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:05.814" endtime="20221115 01:27:05.969"/>
+</kw>
+<status status="PASS" starttime="20221115 01:26:58.815" endtime="20221115 01:27:05.969"/>
+</kw>
+<kw name="Clicar no botão Blog do menu" library="pi3_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Blog}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:27:05.972" level="INFO">Clicking element '//a[@href='/blogs']'.</msg>
+<status status="PASS" starttime="20221115 01:27:05.971" endtime="20221115 01:27:08.511"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h4[contains(.,'Mundo do Design')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:08.512" endtime="20221115 01:27:08.615"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:05.970" endtime="20221115 01:27:08.615"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:27:09.160" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:27:08.622" endtime="20221115 01:27:09.160"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:27:09.160" endtime="20221115 01:27:12.515"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:08.621" endtime="20221115 01:27:12.517"/>
+</kw>
+<doc>Esse teste verfica o acesso a Blog do Menu</doc>
+<tag>acessar_blog Botoes</tag>
+<status status="PASS" starttime="20221115 01:26:51.153" endtime="20221115 01:27:12.518"/>
+</test>
+<test id="s1-t5" name="Caso de Teste 05 - Acessar o Portfólio no menu.">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:27:12.524" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:27:12.523" endtime="20221115 01:27:19.930"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:27:19.931" endtime="20221115 01:27:20.337"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:12.523" endtime="20221115 01:27:20.337"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:27:20.358" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:27:20.356" endtime="20221115 01:27:27.236"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:27.236" endtime="20221115 01:27:27.346"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:20.356" endtime="20221115 01:27:27.346"/>
+</kw>
+<kw name="Clicar no botão Portfólio do menu" library="pi3_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Portifolio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:27:27.349" level="INFO">Clicking element '//a[@href='/portifolios']'.</msg>
+<status status="PASS" starttime="20221115 01:27:27.348" endtime="20221115 01:27:29.789"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h2[@class='h2-heading'][contains(.,'Categorias')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:29.790" endtime="20221115 01:27:29.900"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='portifolios/identidade'])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:27:29.900" level="INFO">Clicking element '(//a[@href='portifolios/identidade'])[2]'.</msg>
+<status status="PASS" starttime="20221115 01:27:29.900" endtime="20221115 01:27:31.862"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>locator=(//div[contains(.,'Dr. Moisés Deverso Pena Filho')])[7]</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221115 01:27:32.059" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-3.png"&gt;&lt;img src="selenium-element-screenshot-3.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:27:31.862" endtime="20221115 01:27:32.061"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:27.347" endtime="20221115 01:27:32.061"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:27:32.307" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:27:32.071" endtime="20221115 01:27:32.308"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:27:32.308" endtime="20221115 01:27:35.726"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:32.068" endtime="20221115 01:27:35.726"/>
+</kw>
+<doc>Esse teste verfica o acesso a Blog do Menu</doc>
+<tag>acessar_portfolio Botoes</tag>
+<status status="PASS" starttime="20221115 01:27:12.521" endtime="20221115 01:27:35.726"/>
+</test>
+<test id="s1-t6" name="Caso de Teste 06 - Verificar a existencia do Botoes das redes sociais no menu.">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:27:35.735" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:27:35.735" endtime="20221115 01:27:44.203"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:27:44.203" endtime="20221115 01:27:44.505"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:35.734" endtime="20221115 01:27:44.505"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:27:44.514" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:27:44.514" endtime="20221115 01:27:50.669"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:50.669" endtime="20221115 01:27:50.778"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:44.513" endtime="20221115 01:27:50.778"/>
+</kw>
+<kw name="Verificar se carregou opçoes de redes sociais" library="pi3_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=(//i[contains(@class,'fab fa-instagram fa-stack-1x')])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:50.780" endtime="20221115 01:27:50.870"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=(//i[contains(@class,'fab fa-linkedin-in fa-stack-1x')])[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:27:50.870" endtime="20221115 01:27:50.945"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>locator=//span[contains(@class,'nav-item social-icons')]</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221115 01:27:51.140" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-4.png"&gt;&lt;img src="selenium-element-screenshot-4.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:27:50.945" endtime="20221115 01:27:51.141"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:50.779" endtime="20221115 01:27:51.143"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:27:51.812" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:27:51.189" endtime="20221115 01:27:51.812"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:27:51.813" endtime="20221115 01:27:55.349"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:51.186" endtime="20221115 01:27:55.349"/>
+</kw>
+<doc>Esse teste verfica os botões das redes sociais</doc>
+<tag>acessar_botoes Botoes</tag>
+<status status="PASS" starttime="20221115 01:27:35.730" endtime="20221115 01:27:55.349"/>
+</test>
+<test id="s1-t7" name="Caso de Teste 07 - Acessar as redes sociais (Instagram).">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:27:55.356" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:27:55.355" endtime="20221115 01:28:03.195"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:28:03.195" endtime="20221115 01:28:03.495"/>
+</kw>
+<status status="PASS" starttime="20221115 01:27:55.354" endtime="20221115 01:28:03.495"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:28:03.554" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:28:03.550" endtime="20221115 01:28:09.917"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:28:09.917" endtime="20221115 01:28:10.061"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:03.549" endtime="20221115 01:28:10.061"/>
+</kw>
+<kw name="Clicar no botão Instagram" library="pi3_resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Fernanda Carrijo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221115 01:28:10.090" level="INFO">Page title is 'Fernanda Carrijo'.</msg>
+<status status="PASS" starttime="20221115 01:28:10.066" endtime="20221115 01:28:10.090"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//i[@class='fab fa-instagram fa-stack-1x'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:28:10.092" level="INFO">Clicking element '(//i[@class='fab fa-instagram fa-stack-1x'])[1]'.</msg>
+<status status="PASS" starttime="20221115 01:28:10.091" endtime="20221115 01:28:10.755"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>url=https://www.instagram.com/fcarrijo.design/</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221115 01:28:10.756" endtime="20221115 01:28:14.799"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=FERNANDA CARRIJO (@fcarrijo.design) • Fotos e vídeos do Instagram</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221115 01:28:14.813" level="INFO">Page title is 'FERNANDA CARRIJO (@fcarrijo.design) • Fotos e vídeos do Instagram'.</msg>
+<status status="PASS" starttime="20221115 01:28:14.799" endtime="20221115 01:28:14.813"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h2[@class='_aacl _aacs _aact _aacx _aada'][contains(.,'fcarrijo.design')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:28:14.813" endtime="20221115 01:28:18.632"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:28:19.503" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:28:18.633" endtime="20221115 01:28:19.503"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:10.065" endtime="20221115 01:28:19.504"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221115 01:28:19.507" endtime="20221115 01:28:19.511"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:28:19.840" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:28:19.524" endtime="20221115 01:28:19.840"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:28:19.840" endtime="20221115 01:28:23.685"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:19.515" endtime="20221115 01:28:23.685"/>
+</kw>
+<doc>Esse teste acessa as redes sociais</doc>
+<tag>acessar_sociais_Instagram Botoes</tag>
+<status status="PASS" starttime="20221115 01:27:55.353" endtime="20221115 01:28:23.686"/>
+</test>
+<test id="s1-t8" name="Caso de Teste 08 - Acessar as redes sociais (Linkedin).">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:28:23.692" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:28:23.691" endtime="20221115 01:28:32.471"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:28:32.471" endtime="20221115 01:28:32.776"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:23.690" endtime="20221115 01:28:32.776"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:28:32.938" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:28:32.937" endtime="20221115 01:28:46.404"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:28:46.405" endtime="20221115 01:28:46.538"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:32.936" endtime="20221115 01:28:46.538"/>
+</kw>
+<kw name="Clicar no botão Linkedin" library="pi3_resources">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Fernanda Carrijo</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221115 01:28:46.571" level="INFO">Page title is 'Fernanda Carrijo'.</msg>
+<status status="PASS" starttime="20221115 01:28:46.540" endtime="20221115 01:28:46.571"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//i[@class='fab fa-linkedin-in fa-stack-1x'])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:28:46.573" level="INFO">Clicking element '(//i[@class='fab fa-linkedin-in fa-stack-1x'])[1]'.</msg>
+<status status="PASS" starttime="20221115 01:28:46.572" endtime="20221115 01:28:47.003"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>url=https://www.instagram.com/fcarrijo.design/</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<msg timestamp="20221115 01:28:49.053" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221115 01:28:49.224" level="FAIL">Unable to locate window with URL 'https://www.instagram.com/fcarrijo.design/'.</msg>
+<status status="FAIL" starttime="20221115 01:28:47.004" endtime="20221115 01:28:49.225"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>title=Cadastre-se | LinkedIn</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" starttime="20221115 01:28:49.230" endtime="20221115 01:28:49.230"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//nav[contains(.,'LinkedIn')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221115 01:28:49.231" endtime="20221115 01:28:49.232"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20221115 01:28:49.232" endtime="20221115 01:28:49.232"/>
+</kw>
+<status status="FAIL" starttime="20221115 01:28:46.539" endtime="20221115 01:28:49.234"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" starttime="20221115 01:28:49.236" endtime="20221115 01:28:49.236"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:28:49.545" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:28:49.238" endtime="20221115 01:28:49.545"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:28:49.546" endtime="20221115 01:28:52.933"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:49.237" endtime="20221115 01:28:52.933"/>
+</kw>
+<doc>Esse teste acessa as redes sociais</doc>
+<tag>acessar_sociais_Linkedin Botoes</tag>
+<status status="FAIL" starttime="20221115 01:28:23.688" endtime="20221115 01:28:52.933">Unable to locate window with URL 'https://www.instagram.com/fcarrijo.design/'.</status>
+</test>
+<test id="s1-t9" name="Caso de Teste 09 - Testar se no footer tem as informações necessárias">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:28:52.940" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:28:52.940" endtime="20221115 01:29:01.123"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:29:01.124" endtime="20221115 01:29:01.627"/>
+</kw>
+<status status="PASS" starttime="20221115 01:28:52.939" endtime="20221115 01:29:01.635"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:29:01.666" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:29:01.665" endtime="20221115 01:29:12.690"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:29:12.691" endtime="20221115 01:29:12.764"/>
+</kw>
+<status status="PASS" starttime="20221115 01:29:01.662" endtime="20221115 01:29:12.766"/>
+</kw>
+<kw name="Verificar se carregou o footer corretamente" library="pi3_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='footer']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:29:12.768" endtime="20221115 01:29:12.855"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>locator=//div[@class='footer']</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221115 01:29:13.232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-5.png"&gt;&lt;img src="selenium-element-screenshot-5.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:29:12.856" endtime="20221115 01:29:13.233"/>
+</kw>
+<status status="PASS" starttime="20221115 01:29:12.767" endtime="20221115 01:29:13.234"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:29:13.617" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:29:13.241" endtime="20221115 01:29:13.617"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:29:13.617" endtime="20221115 01:29:17.646"/>
+</kw>
+<status status="PASS" starttime="20221115 01:29:13.239" endtime="20221115 01:29:17.646"/>
+</kw>
+<doc>Esse teste verfica as informações do footer</doc>
+<tag>acessar_footer Footer</tag>
+<status status="PASS" starttime="20221115 01:28:52.937" endtime="20221115 01:29:17.646"/>
+</test>
+<test id="s1-t10" name="Caso de Teste 10 - Testar se o VLibras funciona">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:29:17.653" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:29:17.653" endtime="20221115 01:29:28.857"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:29:28.858" endtime="20221115 01:29:29.344"/>
+</kw>
+<status status="PASS" starttime="20221115 01:29:17.651" endtime="20221115 01:29:29.344"/>
+</kw>
+<kw name="Acessar a home page do site Fernanda Carrijo Designer" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:29:29.347" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/'</msg>
+<status status="PASS" starttime="20221115 01:29:29.347" endtime="20221115 01:29:39.785"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${MENU}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:29:39.786" endtime="20221115 01:29:39.877"/>
+</kw>
+<status status="PASS" starttime="20221115 01:29:29.344" endtime="20221115 01:29:39.877"/>
+</kw>
+<kw name="Clicar no botão VLibras" library="pi3_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//img[contains(@class,'access-button')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:29:39.920" level="INFO">Clicking element '//img[contains(@class,'access-button')]'.</msg>
+<status status="PASS" starttime="20221115 01:29:39.919" endtime="20221115 01:29:40.196"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>timeout= 200</arg>
+<arg>locator=//canvas[contains(@height,'360')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:29:40.196" endtime="20221115 01:30:02.890"/>
+</kw>
+<status status="PASS" starttime="20221115 01:29:39.919" endtime="20221115 01:30:02.891"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:30:03.533" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:30:02.925" endtime="20221115 01:30:03.534"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:30:03.534" endtime="20221115 01:30:09.890"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:02.924" endtime="20221115 01:30:09.890"/>
+</kw>
+<doc>Esse teste acessa as VLibras</doc>
+<tag>acessar_vlibras VLibras</tag>
+<status status="PASS" starttime="20221115 01:29:17.650" endtime="20221115 01:30:09.890"/>
+</test>
+<test id="s1-t11" name="Caso de Teste 11 - Acessar a pagina como Admin">
+<kw name="Abrir o navegador" library="pi3_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221115 01:30:09.929" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20221115 01:30:09.927" endtime="20221115 01:30:17.501"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221115 01:30:17.502" endtime="20221115 01:30:17.805"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:09.923" endtime="20221115 01:30:17.805"/>
+</kw>
+<kw name="Acessar a home page do site como Administrador" library="pi3_resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URLAdmin}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221115 01:30:17.841" level="INFO">Opening url 'https://fernanda-carrijo-designer-stg.herokuapp.com/souFernanda'</msg>
+<status status="PASS" starttime="20221115 01:30:17.839" endtime="20221115 01:30:32.435"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:17.838" endtime="20221115 01:30:32.436"/>
+</kw>
+<kw name="Digitar e-mail 2007965@aluno.univesp.br no campo e-mail" library="pi3_resources" sourcename="Digitar e-mail ${email} no campo e-mail">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=email</arg>
+<arg>text=${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221115 01:30:32.443" level="INFO">Typing text '2007965@aluno.univesp.br' into text field 'email'.</msg>
+<status status="PASS" starttime="20221115 01:30:32.442" endtime="20221115 01:30:32.779"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:32.441" endtime="20221115 01:30:32.779"/>
+</kw>
+<kw name="Digitar senha Tn7mD6ENxfgZZNz no campo senha" library="pi3_resources" sourcename="Digitar senha ${senha} no campo senha">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=password</arg>
+<arg>text=${senha}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221115 01:30:32.791" level="INFO">Typing text 'Tn7mD6ENxfgZZNz' into text field 'password'.</msg>
+<status status="PASS" starttime="20221115 01:30:32.788" endtime="20221115 01:30:33.035"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:32.782" endtime="20221115 01:30:33.036"/>
+</kw>
+<kw name="Clicar no botão Avançar" library="pi3_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@type,'submit')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221115 01:30:33.041" level="INFO">Clicking element '//button[contains(@type,'submit')]'.</msg>
+<status status="PASS" starttime="20221115 01:30:33.040" endtime="20221115 01:30:43.612"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>timeout= 200</arg>
+<arg>locator=//a[contains(.,'Admin')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221115 01:30:43.614" endtime="20221115 01:30:43.705"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>locator=//a[contains(.,'Admin')]</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20221115 01:30:44.101" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-6.png"&gt;&lt;img src="selenium-element-screenshot-6.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:30:43.705" endtime="20221115 01:30:44.101"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:33.037" endtime="20221115 01:30:44.102"/>
+</kw>
+<kw name="Fechar o navegador" library="pi3_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221115 01:30:44.543" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221115 01:30:44.115" endtime="20221115 01:30:44.543"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221115 01:30:44.544" endtime="20221115 01:30:48.279"/>
+</kw>
+<status status="PASS" starttime="20221115 01:30:44.112" endtime="20221115 01:30:48.279"/>
+</kw>
+<doc>Esse teste acessa a pagina como administrador</doc>
+<tag>acessar_admin Administrador</tag>
+<status status="PASS" starttime="20221115 01:30:09.920" endtime="20221115 01:30:48.279"/>
+</test>
+<status status="FAIL" starttime="20221115 01:25:30.306" endtime="20221115 01:30:48.286"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">acessar_admin Administrador</stat>
+<stat pass="1" fail="0" skip="0">acessar_blog Botoes</stat>
+<stat pass="1" fail="0" skip="0">acessar_botoes Botoes</stat>
+<stat pass="1" fail="0" skip="0">acessar_footer Footer</stat>
+<stat pass="1" fail="0" skip="0">acessar_home Botoes</stat>
+<stat pass="1" fail="0" skip="0">acessar_menu Botoes</stat>
+<stat pass="1" fail="0" skip="0">acessar_portfolio Botoes</stat>
+<stat pass="1" fail="0" skip="0">acessar_sociais_Instagram Botoes</stat>
+<stat pass="0" fail="1" skip="0">acessar_sociais_Linkedin Botoes</stat>
+<stat pass="1" fail="0" skip="0">acessar_vlibras VLibras</stat>
+<stat pass="1" fail="0" skip="0">menus pagina</stat>
+</tag>
+<suite>
+<stat pass="10" fail="1" skip="0" id="s1" name="Pi3 Testes">Pi3 Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
