@@ -30,7 +30,7 @@ Clicar no botão home do menu
 
 Clicar no botão Contato do menu
     Click Element                    locator=${CONTATO} 
-    Wait Until Element Is Visible    locator=//li[@class='address'][contains(.,'Entre em contato e tire suas dúvidas')]
+    Wait Until Element Is Visible    locator=//h2[contains(.,'Contato')]
     
 Digitar o nome de contato "${NomeContato}" no campo de contato
     Input Text                       locator=nomeid2    text=${NomeContato}
@@ -44,12 +44,16 @@ Digitar uma mensagem ${Mensagem} no campo mensagem
 
 Clicar no botão Blog do menu
     Click Element                    locator=${Blog}
-    Wait Until Element Is Visible    locator=//h4[contains(.,'Mundo do Design')]
+    Wait Until Element Is Visible    locator=//h4[contains(.,'MUNDO DO DESIGN')]
 Clicar no botão Portfólio do menu 
     Click Element                    locator=${Portifolio}
-    Wait Until Element Is Visible    locator=//h2[@class='h2-heading'][contains(.,'Categorias')]
-    Click Element                    locator=(//a[@href='portifolios/identidade'])[2]
-    Capture Element Screenshot       locator=(//div[contains(.,'Dr. Moisés Deverso Pena Filho')])[7]
+    Wait Until Element Is Visible    locator=//h2[@class='h2-heading'][contains(.,'Portfólio - Categorias')]
+    Click Element                    locator=(//span[contains(.,'Identidade Visual')])[2]
+    Capture Element Screenshot       locator=//div[@class='element-item-overlay'][contains(.,'Farm2Farm')]
+    Capture Element Screenshot       locator=//div[@class='element-item-overlay'][contains(.,'La Reina Makeup')]
+    Capture Element Screenshot       locator=//div[@class='element-item-overlay'][contains(.,'Élle')]
+    Capture Element Screenshot       locator=//div[@class='element-item-overlay'][contains(.,'Textualizando')]
+
 Verificar se carregou opçoes de redes sociais 
     Wait Until Element Is Visible    locator=(//i[contains(@class,'fab fa-instagram fa-stack-1x')])[1]
     Wait Until Element Is Visible    locator=(//i[contains(@class,'fab fa-linkedin-in fa-stack-1x')])[1]
@@ -67,9 +71,9 @@ Clicar no botão Instagram
 Clicar no botão Linkedin
     Title Should Be                  title=Fernanda Carrijo
     Click Element                    locator=(//i[@class='fab fa-linkedin-in fa-stack-1x'])[1]
-    Switch Window                    url=https://www.instagram.com/fcarrijo.design/
-    Title Should Be                  title=Cadastre-se | LinkedIn 
-    Wait Until Element Is Visible    locator=//nav[contains(.,'LinkedIn')]
+    # Switch Window                    url = https://www.linkedin.com/in/fernandamcarrijo
+    # Title Should Be                  title=Cadastre-se | LinkedIn 
+    # Wait Until Element Is Visible    timeout= 100     locator=//nav[contains(.,'LinkedIn')]
     Capture Page Screenshot
 
 Clicar no botão VLibras
